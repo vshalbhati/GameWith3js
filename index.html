@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GAME</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: 'Rajdhani', sans-serif;
+    }
+    
+    canvas {
+      display: block;
+    }
+    #changeModelButtonright{
+      position: absolute;
+      margin-top: 20%;
+      height: 3em;
+      width: 3em;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      right: 0;
+    }
+    #changeModelButtonleft{
+      position: absolute;
+      margin-top: 20%;
+      height: 3em;
+      width: 3em;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      left: 0;
+    }
+    #my-heading{
+      position: absolute;
+      color: aliceblue;
+      bottom: 0;
+      font-size: 5em;
+      margin-left: 5%;
+    }
+
+  </style>
+</head>
+<body>
+    <h1 id="my-heading">McLaren</h1>
+  <button id="changeModelButtonright">></button>
+  <button id="changeModelButtonleft"><</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.138.0/build/three.module.js",
+            "OrbitControls": "https://unpkg.com/three@0.138.0/examples/jsm/controls/OrbitControls.js"
+        }
+    }
+</script>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
